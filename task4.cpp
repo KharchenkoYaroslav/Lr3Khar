@@ -44,7 +44,7 @@ inline int functionWithStatic() {
 
 int main() {
     //В інтернеті пишуть про 2 способи перевірки чи ф-ція дійсно inline, шукати call ф-ції в Асембл коді та використовувати -Winline 
-    //Якщо я правильно поняв то за першим не inline в мене тільки functionWithStatic а за другим всі inline
+    //Якщо я правильно поняв то за першим не inline в мене тільки functionWithStatic або всі не inline а за другим всі inline 
     cout << "test: " << test1234(2) << endl;
     cout << "Recursive function: " << recursiveFunction(9999) << endl;
 
