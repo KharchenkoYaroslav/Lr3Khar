@@ -8,12 +8,13 @@ using namespace std;
 class Stack {
     char stck[SIZE]; 
     int tos; 
+    char getStck(int tos){ return stck[tos]; };
+    int getTos(){ return tos; };
 public:
     Stack(); 
     void push(char ch); 
     char pop(); 
-    char getStck(int tos){ return stck[tos]; };
-    int getTos(){ return tos; };
+    friend void showstack(Stack o);
 };
 
 Stack::Stack(){
